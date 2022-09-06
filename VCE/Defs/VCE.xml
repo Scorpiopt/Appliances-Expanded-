@@ -94,13 +94,6 @@
          <li>PlaceWorker_PreventInteractionSpotOverlap</li>
       </placeWorkers>
       <minifiedDef>MinifiedThing</minifiedDef>
-	  <modExtensions>
-            <li Class="RecipeInheritance.ThingDefExtension">
-                <inheritRecipesFrom>
-                    <li>VCE_DeepFrier</li>
-                </inheritRecipesFrom>
-            </li>
-        </modExtensions>
    </ThingDef>
    <!-- Chemfuel grill -->
    <ThingDef ParentName="BuildingBase">

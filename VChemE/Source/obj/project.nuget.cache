@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "DOMQOGIskr9cctx6ult4L2RHpeWb12Hbam9RWxIJxXcGqun+Tjj+0lAJB61byIaLvvXdkuiNew3bw7tMPLd4tg==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\VChemE\\Source\\VChemEAppliances.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vova\\.nuget\\packages\\krafs.publicizer\\2.0.1\\krafs.publicizer.2.0.1.nupkg.sha512",
+    "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3389\\krafs.rimworld.ref.1.3.3389.nupkg.sha512",
+    "C:\\Users\\Vova\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

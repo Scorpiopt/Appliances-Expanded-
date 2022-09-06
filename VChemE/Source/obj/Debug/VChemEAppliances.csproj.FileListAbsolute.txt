@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Appliances-Expanded-\VChemE\Source\obj\Debug\VChemEAppliances.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Appliances-Expanded-\VChemE\Source\obj\Debug\VChemEAppliances.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Appliances-Expanded-\VChemE\Assemblies\VChemEAppliances.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Appliances-Expanded-\VChemE\Source\obj\Debug\VChemEAppliances.dll

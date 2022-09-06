@@ -30,6 +30,7 @@
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <minifiedDef />
         <thingCategories Inherit="false" />
+	<tickerType>Normal</tickerType>
         <size>(5,2)</size>
         <statBases>
           <MaxHitPoints>300</MaxHitPoints>
@@ -115,6 +116,7 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
+	<tickerType>Normal</tickerType>
         <constructEffect>ConstructWood</constructEffect>
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>0.5</fillPercent>

@@ -1,95 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-   <!-- Infinite deepchem extractor -->
-   <ThingDef ParentName="BuildingBase">
-      <defName>CA_InfiniteDeepchemReactor</defName>
-      <label>infinite deepchem reactor</label>
-      <description>Slowly generates deepchem by a complex series of chemical reactions, using atoms extracted from the air and deep crust. Needs to be placed outdoors.</description>
-      <drawerType>MapMeshAndRealTime</drawerType>	  
-      <graphicData>
-         <texPath>Things/Buildings/Special/DeepchemExtractor/DeepchemExtractor</texPath>
-         <graphicClass>Graphic_Single</graphicClass>
-         <drawSize>(5, 5)</drawSize>
-		 <drawRotated>false</drawRotated>
-         <shadowData>
-            <volume>(1.8, 1.0, 0.2)</volume>
-            <offset>(0.0, 0.0, -0.4)</offset>
-         </shadowData>
-      </graphicData>
-      <thingCategories>
-         <li>BuildingsSpecial</li>
-      </thingCategories>
-      <costList>
-         <Steel>200</Steel>
-         <ComponentSpacer>8</ComponentSpacer>
-      </costList>
-      <building>
-         <destroySound>BuildingDestroyed_Metal_Big</destroySound>
-      </building>
-      <comps>
-         <li Class="CompProperties_Power">
-            <compClass>CompPowerTrader</compClass>
-            <basePowerConsumption>600</basePowerConsumption>
-         </li>
-         <li Class="CompProperties_Breakdownable" />
-         <li Class="CompProperties_Flickable" />
-         <li Class="CompProperties_Spawner">
-            <requiresPower>true</requiresPower>
-            <thingToSpawn>VCHE_Deepchem</thingToSpawn>
-            <spawnCount>40</spawnCount>
-            <spawnIntervalRange>
-               <min>100000</min>
-               <max>100000</max>
-            </spawnIntervalRange>
-            <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
-            <showMessageIfOwned>true</showMessageIfOwned>
-         </li>
-         <li Class="CompProperties_Explosive">
-            <explosiveRadius>8</explosiveRadius>
-            <explosiveDamageType>Flame</explosiveDamageType>
-         </li>
-		     <li Class="PipeSystem.CompProperties_ResourceStorage">
-        <pipeNet>VCHE_DeepchemNet</pipeNet>
-        <storageCapacity>5</storageCapacity>
-        <drawStorageBar>false</drawStorageBar>
-        <addStorageInfo>false</addStorageInfo>
-        <addTransferGizmo>false</addTransferGizmo>
-      </li>
-		 <li Class="VCHE.CompProperties_Pumpjack">
-        <ticksPerPortion>60</ticksPerPortion>
-        <ambientSound>VCHE_PumpjackAmbient</ambientSound>
-      </li>
-      </comps>
-      <altitudeLayer>Building</altitudeLayer>
-      <statBases>
-         <MarketValue>1500</MarketValue>
-         <MaxHitPoints>200</MaxHitPoints>
-         <Flammability>1.0</Flammability>
-         <Beauty>-10</Beauty>
-         <Mass>35</Mass>
-         <WorkToBuild>8000</WorkToBuild>
-      </statBases>
-      <thingSetMakerTags>
-         <li>RewardStandardHighFreq</li>
-      </thingSetMakerTags>
-      <tickerType>Normal</tickerType>
-      <size>(2, 2)</size>
-      <fillPercent>1.0</fillPercent>
-      <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-      <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-	  <designationCategory>Power</designationCategory>
-      <passability>Impassable</passability>
-      <rotatable>false</rotatable>
-      <canOverlapZones>false</canOverlapZones>
-      <minifiedDef>MinifiedThing</minifiedDef>
-      <tradeability>Sellable</tradeability>
-	  <uiIconPath>Things/Buildings/Special/DeepchemExtractor/DeepchemExtractor_MenuIcon</uiIconPath>
-    <uiIconScale>1</uiIconScale>
-      <tradeTags>
-         <li>ExoticBuilding</li>
-      </tradeTags>
-   </ThingDef>
-   <researchPrerequisites>
-      <li>MicroelectronicsBasics</li>
-    </researchPrerequisites>
+	<!-- Infinite deepchem extractor -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>CA_InfiniteDeepchemReactor</defName>
+		<label>infinite deepchem reactor</label>
+		<description>Slowly generates deepchem by a complex series of chemical reactions, using atoms extracted from the air and deep crust. Needs to be placed outdoors.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/Special/DeepchemExtractor/DeepchemExtractor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5, 5)</drawSize>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(1.8, 1.0, 0.2)</volume>
+				<offset>(0.0, 0.0, -0.4)</offset>
+			</shadowData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<placeWorkers>
+			<li>VCHE.PlaceWorker_Pumpjack</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+			<li Class="PipeSystem.CompProperties_ResourceStorage">
+				<pipeNet>VCHE_DeepchemNet</pipeNet>
+				<storageCapacity>5</storageCapacity>
+				<drawStorageBar>false</drawStorageBar>
+				<addStorageInfo>false</addStorageInfo>
+				<addTransferGizmo>false</addTransferGizmo>
+			</li>
+			<li Class="VCHE.CompProperties_Pumpjack">
+				<compClass>VChemEAppliances.CompPumpjackInfinite</compClass>
+				<ticksPerPortion>60</ticksPerPortion>
+				<ambientSound>VCHE_PumpjackAmbient</ambientSound>
+			</li>
+		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>-10</Beauty>
+			<Mass>35</Mass>
+			<WorkToBuild>8000</WorkToBuild>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<tickerType>Normal</tickerType>
+		<size>(2, 2)</size>
+		<fillPercent>1.0</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<passability>Impassable</passability>
+		<rotatable>false</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<tradeability>Sellable</tradeability>
+		<uiIconPath>Things/Buildings/Special/DeepchemExtractor/DeepchemExtractor_MenuIcon</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<tradeTags>
+			<li>ExoticBuilding</li>
+		</tradeTags>
+	</ThingDef>
+	<researchPrerequisites>
+		<li>MicroelectronicsBasics</li>
+	</researchPrerequisites>
 </Defs>
