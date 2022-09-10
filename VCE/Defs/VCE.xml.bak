@@ -94,13 +94,6 @@
          <li>PlaceWorker_PreventInteractionSpotOverlap</li>
       </placeWorkers>
       <minifiedDef>MinifiedThing</minifiedDef>
-	  <modExtensions>
-            <li Class="RecipeInheritance.ThingDefExtension">
-                <inheritRecipesFrom>
-                    <li>VCE_DeepFrier</li>
-                </inheritRecipesFrom>
-            </li>
-        </modExtensions>
    </ThingDef>
    <!-- Chemfuel grill -->
    <ThingDef ParentName="BuildingBase">
@@ -247,7 +240,7 @@
          <MaxHitPoints>100</MaxHitPoints>
          <Flammability>1.0</Flammability>
       </statBases>
-      <tickerType>Rare</tickerType>
+      <tickerType>Normal</tickerType>
       <size>(1,1)</size>
       <designationCategory>Production</designationCategory>
       <passability>PassThroughOnly</passability>
@@ -302,7 +295,7 @@
    <!-- MAYBE PENDING COMPLETION -->
    <ThingDef ParentName="BuildingBase">
       <defName>CE_AirFryer</defName>
-      <label>Air fryer r</label>
+      <label>Air fryer </label>
       <description>An air fryer is a small countertop convection oven designed to simulate deep frying without submerging the food in oil. A fan circulates hot air at high speed, producing a crisp layer via browning reactions. Much healthier than deep frying.</description>
       <thingClass>Building_WorkTable</thingClass>
       <graphicData>
@@ -381,12 +374,9 @@
          <li>PlaceWorker_PreventInteractionSpotOverlap</li>
       </placeWorkers>
       <minifiedDef>MinifiedThing</minifiedDef>
+	<researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
    </ThingDef>
-    <modExtensions>
-            <li Class="RecipeInheritance.ThingDefExtension">
-                <inheritRecipesFrom>
-                    <li>VCE_DeepFrier</li>
-                </inheritRecipesFrom>
-            </li>
-        </modExtensions>
+	
 </Defs>

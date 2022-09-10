@@ -375,14 +375,5 @@
       </placeWorkers>
       <minifiedDef>MinifiedThing</minifiedDef>
    </ThingDef>
-    <modExtensions>
-            <li Class="RecipeInheritance.ThingDefExtension">
-                <inheritRecipesFrom>
-                    <li>VCE_DeepFrier</li>
-                </inheritRecipesFrom>
-            </li>
-        </modExtensions>
-		<researchPrerequisites>
-      <li>MicroelectronicsBasics</li>
-    </researchPrerequisites>
+	
 </Defs>

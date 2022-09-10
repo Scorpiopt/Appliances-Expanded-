@@ -4,7 +4,7 @@
 	<RecipeDef>
 		<defName>CE_DeepFryMeatsNoBadHediff</defName>
 		<label>Healthy fried meats x20</label>
-		<description>Deep fry large meat chunks. Air fried food is very tasty.</description>
+		<description>Deep fry large meat chunks. Deep fried food is very tasty.</description>
 		<jobString>Deep frying meats.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -60,8 +60,8 @@
 
 	<RecipeDef>
 		<defName>CE_DeepFryVegetables</defName>
-		<label>healthy fried vegetables x20</label>
-		<description>Healthy fried vegetables. Air fried food is very tasty.</description>
+		<label>deep fry vegetables x20</label>
+		<description>Healthy fried vegetables. Deep fried food is very tasty.</description>
 		<jobString>Deep frying vegetables.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>

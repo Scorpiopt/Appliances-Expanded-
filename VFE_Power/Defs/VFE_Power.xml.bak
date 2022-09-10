@@ -4,8 +4,7 @@
    <ThingDef ParentName="BuildingBase">
       <defName>CA_GasTurbine</defName>
       <label>gas-powered turbine</label>
-      <description>The big Chungus of Helixien gas Generators 
-            A helixien gas powered turbojet. Although cumbersome, it produces a lot power and can be linked to the helixien gas network.</description>
+      <description>A helixien gas powered turbojet. Although cumbersome, it produces a lot power and can be linked to the helixien gas network.</description>
       <thingClass>Building</thingClass>
       <drawerType>MapMeshAndRealTime</drawerType>
       <graphicData>
@@ -89,7 +88,7 @@
    <ThingDef ParentName="BuildingBase">
       <defName>CE_InfiniteChemfuelPump</defName>
       <label>infinite chemfuel pump</label>
-      <description>A large pump capable of generating chemfuel, using atoms extracted from the air and crust. Does not need a chemfuel pond to work with, but yields lower amounts of chemfuel.</description>
+      <description>A large pump capable of generating chemfuel, using atoms extracted from the air and crust. Needs to be placed on the chemfuel pond but wont spend the ponds capacity.</description>
       <thingClass>Building</thingClass>
       <graphicData>
          <texPath>Things/Buildings/Special/ChemfuelExtractor/ChemfuelExtractor</texPath>
@@ -124,17 +123,11 @@
             <compClass>CompPowerTrader</compClass>
             <basePowerConsumption>500</basePowerConsumption>
          </li>
-         <li Class="CompProperties_Spawner">
-            <requiresPower>true</requiresPower>
-            <thingToSpawn>Chemfuel</thingToSpawn>
-            <spawnCount>60</spawnCount>
-            <spawnIntervalRange>
-               <min>600000</min>
-               <max>600000</max>
-            </spawnIntervalRange>
-            <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
-            <showMessageIfOwned>true</showMessageIfOwned>
-         </li>
+			<li Class="VanillaPowerExpanded.CompProperties_ChemfuelPump">
+				<compClass>VFEPowerAppliances.CompChemfuelPumpInfinite</compClass>
+				<fuelProduced>75</fuelProduced>
+				<fuelInterval>5</fuelInterval>
+			</li>
          <li Class="CompProperties_Glower">
             <glowRadius>6</glowRadius>
             <glowColor>(166, 20, 20,0)</glowColor>

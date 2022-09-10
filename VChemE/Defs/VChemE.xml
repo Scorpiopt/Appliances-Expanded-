@@ -2,14 +2,14 @@
 <Defs>
 	<!-- Infinite deepchem extractor -->
 	<ThingDef ParentName="BuildingBase">
-		<defName>CA_InfiniteDeepchemReactor</defName>
+		<defName>CA_InfiniteDeepchemPumpjack</defName>
 		<label>infinite deepchem reactor</label>
-		<description>Slowly generates deepchem by a complex series of chemical reactions, using atoms extracted from the air and deep crust. Needs to be placed outdoors.</description>
+		<description>Slowly extracts deepchem using  atoms extracted from the air and deep crust. A sustainable way to extract Deepchem indefinitely.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Buildings/Special/DeepchemExtractor/DeepchemExtractor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(5, 5)</drawSize>
+			<drawSize>(3, 3)</drawSize>
 			<drawRotated>false</drawRotated>
 			<shadowData>
 				<volume>(1.8, 1.0, 0.2)</volume>
@@ -82,8 +82,9 @@
 		<tradeTags>
 			<li>ExoticBuilding</li>
 		</tradeTags>
-	</ThingDef>
-	<researchPrerequisites>
+		<researchPrerequisites>
 		<li>MicroelectronicsBasics</li>
 	</researchPrerequisites>
+	</ThingDef>
+	
 </Defs>

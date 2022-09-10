@@ -14,6 +14,12 @@
 					<li>CE_ChemfuelDeepFrier</li>
 				</value>
 			</li>
+<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkGiverDef[defName='VCE_DoBillsFryer']/fixedBillGiverDefs</xpath>
+				<value>
+					<li>CE_AirFryer</li>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

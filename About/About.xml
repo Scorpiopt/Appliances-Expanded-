@@ -27,6 +27,7 @@
     <li>VanillaExpanded.VCookE</li>
     <li>VanillaExpanded.VFEPower</li>
     <li>VanillaExpanded.VChemfuelE</li>
+    <li>VanillaExpanded.VFEProduction</li>
   </loadAfter>
   <description>Extra Appliances for your colony.</description>
 </ModMetaData>
