@@ -168,8 +168,9 @@
 	<stuffCategories>
       <li>Stony</li>
     </stuffCategories>
+	<costStuffCount>150</costStuffCount>
         <costList>
-            <Steel>170</Steel>
+            <Steel>50</Steel>
             <ComponentIndustrial>2</ComponentIndustrial>
         </costList>
         <altitudeLayer>Building</altitudeLayer>
@@ -659,6 +660,7 @@
         <designationHotKey>Misc11</designationHotKey>
 		<graphicData>
          <texPath>Things/Buildings/Production/ChemfuelFloodlight/ChemfuelFloodlight</texPath>
+		 <drawSize>(2,3.5)</drawSize>
         </graphicData>
         <comps Inherit="false">
             <li Class="CompProperties_Glower">

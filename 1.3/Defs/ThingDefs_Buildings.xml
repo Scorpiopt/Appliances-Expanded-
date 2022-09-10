@@ -168,8 +168,9 @@
 	<stuffCategories>
       <li>Stony</li>
     </stuffCategories>
+	<costStuffCount>150</costStuffCount>
         <costList>
-            <Steel>170</Steel>
+            <Steel>50</Steel>
             <ComponentIndustrial>2</ComponentIndustrial>
         </costList>
         <altitudeLayer>Building</altitudeLayer>
@@ -660,6 +661,10 @@
 		<graphicData>
          <texPath>Things/Buildings/Production/ChemfuelFloodlight/ChemfuelFloodlight</texPath>
 		 <drawSize>(2,3.5)</drawSize>
+		 <shadowData>
+				<volume>(0, 0, 0)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
         </graphicData>
         <comps Inherit="false">
             <li Class="CompProperties_Glower">
@@ -674,6 +679,7 @@
                         <li>Chemfuel</li>
                     </thingDefs>
                 </fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
                 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
             </li>
             <li Class="CompProperties_Styleable" />
