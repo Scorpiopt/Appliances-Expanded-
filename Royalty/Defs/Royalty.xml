@@ -3,7 +3,7 @@
     <ThingDef Name="Brazier" ParentName="FurnitureBase">
         <defName>CA_ChemfuelBrazier</defName>
         <label>chemfuel brazier</label>
-        <description>A bowl-shaped furnishing used to hold a fire. Will light the surroundings and create heat. Powered by chemfuel torches.</description>
+        <description>A Chemfuel Brazier. Will light the surroundings and create heat.</description>
         <category>Building</category>
         <tickerType>Normal</tickerType>
         <drawerType>RealtimeOnly</drawerType>

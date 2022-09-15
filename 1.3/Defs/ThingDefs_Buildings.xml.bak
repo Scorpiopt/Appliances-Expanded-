@@ -168,9 +168,9 @@
 	<stuffCategories>
       <li>Stony</li>
     </stuffCategories>
-	<costStuffCount>150</costStuffCount>
+ <costStuffCount>150</costStuffCount>
         <costList>
-            <Steel>50</Steel>
+            <Steel>30</Steel>
             <ComponentIndustrial>2</ComponentIndustrial>
         </costList>
         <altitudeLayer>Building</altitudeLayer>
@@ -204,8 +204,8 @@
         </inspectorTabs>
         <comps>
             <li Class="CompProperties_Refuelable">
-                <fuelConsumptionRate>5.0</fuelConsumptionRate>
-                <fuelCapacity>30.0</fuelCapacity>
+                <fuelConsumptionRate>10.0</fuelConsumptionRate>
+                <fuelCapacity>100.0</fuelCapacity>
                 <fuelFilter>
                     <thingDefs>
                         <li>Chemfuel</li>
@@ -244,7 +244,7 @@
     <ThingDef ParentName="LampBase">
         <defName>CA_Sunlamp</defName>
         <label>chemfuel sun lamp</label>
-        <description>An industrial lamp which lights an area brightly enough to grow crops, but consumes a huge amount of chemfuel. It also has a slightly lower lighting radius. Automatically turns itself off at night.</description>
+        <description></description>
         <thingClass>Building_SunLamp</thingClass>
         <graphicData>
             <texPath>Things/Buildings/Production/ChemfuelSunLamp/ChemfuelSunLamp</texPath> <!-- Replace texture here -->
@@ -296,6 +296,13 @@
 		<graphicData>
          <texPath>Things/Buildings/Production/ChemfuelExternalLamp/ChemfuelExternalLamp</texPath>
       </graphicData>
+     <statBases>
+            <WorkToBuild>100</WorkToBuild>
+            <Mass>4.5</Mass>
+        </statBases>
+        <costList>
+            <Steel>20</Steel>
+        </costList>
         <comps Inherit="false">
             <li Class="CompProperties_Glower">
                 <glowRadius>12</glowRadius>
@@ -502,7 +509,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>CA_WoodFiredTurbine</defName>
         <label>wood-fired turbine</label>
-        <description>A wood powered turbojet. Although cumbersome, it produces a lot power. Must be refueled by hand.</description>
+        <description>A wood powered turbojet generator . Although cumbersome, it produces a lot power. Must be refueled by hand.</description>
         <thingClass>Building</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
@@ -662,6 +669,9 @@
          <texPath>Things/Buildings/Production/ChemfuelFloodlight/ChemfuelFloodlight</texPath>
 		 <drawSize>(2,3.5)</drawSize>
         </graphicData>
+       <costList>
+         <Steel>80</Steel>
+      </costList>
         <comps Inherit="false">
             <li Class="CompProperties_Glower">
                 <glowRadius>18</glowRadius>
@@ -684,7 +694,7 @@
 
 <ThingDef ParentName="BenchBase">
       <defName>CE_ChemfuelStove</defName>
-      <label>chemfuel stove</label>
+      <label>Chemfuel stove</label>
       <description>An chemfuel-powered stove with an attached countertop for preparing meals.</description>
       <thingClass>PipeSystem.Building_ResourceWorkTable_HeatPush</thingClass>
       <graphicData>
@@ -769,8 +779,11 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>
 		</graphicData>
+         <costList>
+         <Steel>20</Steel>
+      </costList>
 		<altitudeLayer>Item</altitudeLayer>
-		<description>A Chemfuel-powered wall light that lights an area. People need light to move and work at full speed. Needs to be connected to the helixien gas network. Can be safely placed outdoors.</description>
+		<description>A Chemfuel-powered wall light that lights an area. People need light to move and work at full speed. Can be safely placed outdoors.</description>
          <comps Inherit="false">
             <li Class="CompProperties_Glower">
                 <glowRadius>12</glowRadius>

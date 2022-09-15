@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>						
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Chemfuel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="PS_DeepchemRefinery"]/comps/li[@Class="PipeSystem.CompProperties_ResourceProcessor"]/results</xpath>
+                        <value>
+                                      <li>
+                                        <countNeeded>150</countNeeded>
+                                        <eachTicks>14000</eachTicks>
+                                        <thing>Neutroamine</thing>
+                                   <thingCount>15</thingCount>
+                                </li>
+                      </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
