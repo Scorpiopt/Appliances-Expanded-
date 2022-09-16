@@ -244,7 +244,7 @@
     <ThingDef ParentName="LampBase">
         <defName>CA_Sunlamp</defName>
         <label>chemfuel sun lamp</label>
-        <description></description>
+        <description>An industrial lamp which lights an area brightly enough to grow crops, but consumes a huge amount of chemfuel. It also has a slightly lower lighting radius. Automatically turns itself off at night.</description>
         <thingClass>Building_SunLamp</thingClass>
         <graphicData>
             <texPath>Things/Buildings/Production/ChemfuelSunLamp/ChemfuelSunLamp</texPath> <!-- Replace texture here -->
