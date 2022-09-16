@@ -12,7 +12,7 @@
 		<label>healthy fried meat</label>
 		<description>Meat tenderized then filleted, then rolled in a thick batter before being air fried. The end result is a tasty soul food - Not quite as filling as a meal, but very pleasing to eat.</description>
 		<graphicData>
-			<texPath>Things/Items/Deepfried/VCE_DeepfryedMeat_Big</texPath>
+			<texPath>Things/Buildings/Meal/FriedMeat_a</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<tradeability>None</tradeability>
@@ -54,7 +54,7 @@
 		<label>healthy fried vegetables</label>
 		<description>Vegetables julienned then patted dry before being air fried until golden brown. As crispy and pleasing as they are, these deep fried treats are not as filling as a normal meal.</description>
 		<graphicData>
-			<texPath>Things/Items/Deepfried/VCE_DeepfryedVegetables</texPath>
+			<texPath>Things/Buildings/Meal/FriedVegetables_a</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<stackLimit>75</stackLimit>

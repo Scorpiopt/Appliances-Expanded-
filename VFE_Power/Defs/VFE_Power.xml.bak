@@ -125,8 +125,8 @@
          </li>
 			<li Class="VanillaPowerExpanded.CompProperties_ChemfuelPump">
 				<compClass>VFEPowerAppliances.CompChemfuelPumpInfinite</compClass>
-				<fuelProduced>75</fuelProduced>
-				<fuelInterval>5</fuelInterval>
+				<fuelProduced>65</fuelProduced>
+				<fuelInterval>6</fuelInterval>
 			</li>
          <li Class="CompProperties_Glower">
             <glowRadius>6</glowRadius>
@@ -143,6 +143,21 @@
             <preExplosionSpawnChance>1</preExplosionSpawnChance>
             <wickTicks>70~150</wickTicks>
          </li>
+		 <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHE_ChemfuelNet</pipeNet>
+        <storageCapacity>150</storageCapacity>
+        <barSize>(1.3, 0.25)</barSize>
+        <margin>0.1</margin>
+        <centerOffset>(0, 0, 0.35)</centerOffset>
+        <extractOptions>
+          <texPath>UI/Gizmos/ExtractChemfuel</texPath>
+          <labelKey>VCHE_ExtractChemfuel</labelKey>
+          <descKey>VCHE_ExtractChemfuelDesc</descKey>
+          <extractAmount>150</extractAmount>
+          <thing>Chemfuel</thing>
+          <ratio>1</ratio>
+        </extractOptions>
+      </li>
       </comps>
       <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
       <designationCategory>Power</designationCategory>
@@ -153,4 +168,84 @@
       </researchPrerequisites>
       <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
    </ThingDef>
+<!-- Chemfuel Drill -->
+<ThingDef ParentName="BuildingBase">
+		<defName>SCP_ChemDrill</defName>
+		<label>gas powered excavator</label>
+		<description>A deep-crust drilling excavator for extracting minerals from deep under the surface. Use a ground-penetrating scanner to detect the resources. This drill will yield stone chunks if no resources are present. Can be repositioned freely.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/GasMachines/GasPoweredExcavator</texPath>
+			<drawSize>(1,1)</drawSize>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.52, 0.53, 0.09)</volume>
+				<offset>(0,0,-0.43)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<designationCategory>Production</designationCategory>
+		<designationHotKey>Misc12</designationHotKey>
+		<specialDisplayRadius>2.6</specialDisplayRadius>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<uiIconOffset>(0, 0.03)</uiIconOffset>
+		<uiIconScale>0.85</uiIconScale>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<building>
+			<uninstallWork>1800</uninstallWork>
+		</building>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<placeWorkers>
+			<li>PlaceWorker_DeepDrill</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<researchPrerequisites>
+			<li>DeepDrilling</li>
+		</researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Flammability>0.75</Flammability>
+			<Beauty>-25</Beauty>
+			<Mass>35</Mass>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>10.0</fuelConsumptionRate>
+                <fuelCapacity>50.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(217,112,33,0)</glowColor>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>12</heatPerSecond>
+            </li>
+			<li Class="CompProperties_DeepDrill"/>
+			<li Class="CompProperties_CreatesInfestations"/>
+		</comps>
+	</ThingDef>
 </Defs>

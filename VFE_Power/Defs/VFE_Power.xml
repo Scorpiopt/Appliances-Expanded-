@@ -143,6 +143,21 @@
             <preExplosionSpawnChance>1</preExplosionSpawnChance>
             <wickTicks>70~150</wickTicks>
          </li>
+		 <li Class="PipeSystem.CompProperties_ResourceStorage">
+        <pipeNet>VCHE_ChemfuelNet</pipeNet>
+        <storageCapacity>150</storageCapacity>
+        <barSize>(1.3, 0.25)</barSize>
+        <margin>0.1</margin>
+        <centerOffset>(0, 0, 0.35)</centerOffset>
+        <extractOptions>
+          <texPath>UI/Gizmos/ExtractChemfuel</texPath>
+          <labelKey>VCHE_ExtractChemfuel</labelKey>
+          <descKey>VCHE_ExtractChemfuelDesc</descKey>
+          <extractAmount>150</extractAmount>
+          <thing>Chemfuel</thing>
+          <ratio>1</ratio>
+        </extractOptions>
+      </li>
       </comps>
       <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
       <designationCategory>Power</designationCategory>

@@ -94,6 +94,13 @@
          <li>PlaceWorker_PreventInteractionSpotOverlap</li>
       </placeWorkers>
       <minifiedDef>MinifiedThing</minifiedDef>
+        <modExtensions>
+            <li Class="RecipeInheritance.ThingDefExtension">
+                <inheritRecipesFrom>
+                    <li>VCE_DeepFrier</li>
+                </inheritRecipesFrom>
+            </li>
+        </modExtensions>
    </ThingDef>
    <!-- Chemfuel grill -->
    <ThingDef ParentName="BuildingBase">
@@ -116,7 +123,7 @@
       <tickerType>Normal</tickerType>
       <costList>
          <Steel>75</Steel>
-         <WoodLog>20</WoodLog>
+         <Chemfuel>20</Chemfuel>
       </costList>
       <altitudeLayer>Building</altitudeLayer>
       <rotatable>true</rotatable>
