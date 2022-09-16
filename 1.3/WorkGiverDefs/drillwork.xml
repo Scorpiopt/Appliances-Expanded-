@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<WorkGiverDef>
+    <defName>SCP_ChemDrill</defName>
+    <label>drill at Chemfuel Escavatorl</label>
+    <giverClass>WorkGiver_DeepDrill</giverClass>
+    <workType>Mining</workType>
+    <priorityInType>80</priorityInType>
+    <verb>drill</verb>
+    <gerund>drilling</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>
