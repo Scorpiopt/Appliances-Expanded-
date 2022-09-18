@@ -62,7 +62,6 @@ namespace AppliancesExpanded
         {
             return Danger.Deadly;
         }
-
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
         {
             List<Building> allBuildingsColonist = pawn.Map.listerBuildings.allBuildingsColonist;
@@ -71,8 +70,7 @@ namespace AppliancesExpanded
                 Building building = allBuildingsColonist[i];
                 if (building.def == AE_DefOf.SCP_ChemDrill)
                 {
-                    CompPowerTrader comp = building.GetComp<CompPowerTrader>();
-                    if ((comp == null || comp.PowerOn) && building.Map.designationManager.DesignationOn(building, DesignationDefOf.Uninstall) == null)
+                    if (building.Map.designationManager.DesignationOn(building, DesignationDefOf.Uninstall) == null)
                     {
                         return false;
                     }
