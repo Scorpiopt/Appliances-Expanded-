@@ -5,7 +5,7 @@
 		<defName>CAS_ChemfuelCooler</defName>
 		<label>chemfuel cooler</label>
 		<description>An air-cooling machine that runs on chemfuel, can fit into a wall. Cool air comes out one side, while hot exhaust comes out the other. Can be used to cool down rooms during summer, or to create a walk-in freezer.</description>
-		<thingClass>Building_Cooler</thingClass>
+		<thingClass>AppliancesExpanded.Building_CoolerFueled</thingClass>
 		<graphicData>
 			<texPath>Things/Buildings/Temp/ChemCooler/ChemCooler</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -30,7 +30,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>0.7</Flammability>
 		</statBases>
-		<tickerType>Normal</tickerType>
+		<tickerType>Rare</tickerType>
 		<costList>
 			<Steel>90</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -45,6 +45,7 @@
 		</building>
 		<comps>
 			<li Class="CompProperties_Refuelable">
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<fuelConsumptionRate>3.0</fuelConsumptionRate>
 				<fuelCapacity>15.0</fuelCapacity>
 				<fuelFilter>
@@ -73,7 +74,7 @@
 		<defName>CAS_ChemfuelHeater</defName>
 		<label>chemfuel heater</label>
 		<description>A device that burns chemfuel to produce heat.</description>
-		<thingClass>Building_Heater</thingClass>
+		<thingClass>AppliancesExpanded.Building_HeaterFueled</thingClass>
 		<graphicData>
 			<texPath>Things/Buildings/Temp/ChemHeater/ChemHeater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -105,7 +106,7 @@
 			<Mass>6</Mass>
 			<Flammability>0.5</Flammability>
 		</statBases>
-		<tickerType>Normal</tickerType>
+		<tickerType>Rare</tickerType>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
 		</building>
@@ -120,6 +121,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
 			<li Class="CompProperties_Refuelable">
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<fuelConsumptionRate>3.0</fuelConsumptionRate>
 				<fuelCapacity>15.0</fuelCapacity>
 				<fuelFilter>

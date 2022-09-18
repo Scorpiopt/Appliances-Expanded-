@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppliancesExpandedMod.cs" />
+    <Compile Include="AE_DefOf.cs" />
+    <Compile Include="Building_HeaterFueled.cs" />
+    <Compile Include="CompChemfuelDeepDrill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="WorkGiver_DeepDrillChemfuel.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
