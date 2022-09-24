@@ -14,7 +14,7 @@ namespace VChemEAppliances
     {
         private static readonly Material PumpjackBottom = MaterialPool.MatFrom("Things/Buildings/Special/InfinitDeepchemExtractor/InfinitDeepchemExtractor_Bottom");
 
-        private static readonly Material PumpjackPump = MaterialPool.MatFrom("Things/Buildings/Special/InfinitDeepchemExtractor/InfinitDeepchemExtractor");
+        private static readonly Material PumpjackPump = MaterialPool.MatFrom("Things/Buildings/Special/InfinitDeepchemExtractor/DeepchemPump");
 
         private Vector3 pumpPos = Vector3.zero;
 
