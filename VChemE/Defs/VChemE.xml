@@ -7,7 +7,7 @@
 		<description>Slowly extracts deepchem using  atoms extracted from the air and deep crust. A sustainable way to extract Deepchem indefinitely.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/Special/DeepchemExtractor/DeepchemExtractor</texPath>
+			<texPath>Things/Buildings/Special/InfinitDeepchemExtractor/InfinitDeepchemExtractor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3, 3)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -50,7 +50,7 @@
 			</li>
 			<li Class="VCHE.CompProperties_Pumpjack">
 				<compClass>VChemEAppliances.CompPumpjackInfinite</compClass>
-				<ticksPerPortion>60</ticksPerPortion>
+				<ticksPerPortion>120</ticksPerPortion>
 				<ambientSound>VCHE_PumpjackAmbient</ambientSound>
 			</li>
 		</comps>
@@ -70,14 +70,13 @@
 		<size>(2, 2)</size>
 		<fillPercent>1.0</fillPercent>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
 		<passability>Impassable</passability>
 		<rotatable>false</rotatable>
 		<canOverlapZones>false</canOverlapZones>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<tradeability>Sellable</tradeability>
-		<uiIconPath>Things/Buildings/Special/DeepchemExtractor/DeepchemExtractor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Buildings/Special/InfinitDeepchemExtractor/InfinitDeepchemExtractor_MenuIcon</uiIconPath>
 		<uiIconScale>1</uiIconScale>
 		<tradeTags>
 			<li>ExoticBuilding</li>
