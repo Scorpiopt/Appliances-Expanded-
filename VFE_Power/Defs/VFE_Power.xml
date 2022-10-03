@@ -80,15 +80,16 @@
       <constructEffect>ConstructMetal</constructEffect>
       <researchPrerequisites>
          <li>Electricity</li>
+		 <li>VFE_GasExtraction</li>
       </researchPrerequisites>
-      <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
    </ThingDef>
 
-   <!-- Infinite chemfuel pump -->
+<!-- Infinite chemfuel pump -->
    <ThingDef ParentName="BuildingBase">
       <defName>CE_InfiniteChemfuelPump</defName>
       <label>infinite chemfuel pump</label>
-      <description>A large pump capable of generating chemfuel, using atoms extracted from the air and crust. Needs to be placed on the chemfuel pond but wont spend the ponds capacity.</description>
+      <description>A large pump capable of generating chemfuel, using atoms extracted from the air and crust. Needs a chemfuel pond to work but will not spend the pond's capacity.</description>
       <thingClass>Building</thingClass>
       <graphicData>
          <texPath>Things/Buildings/Special/ChemfuelExtractor/ChemfuelExtractor</texPath>
@@ -143,7 +144,7 @@
             <preExplosionSpawnChance>1</preExplosionSpawnChance>
             <wickTicks>70~150</wickTicks>
          </li>
-		 <li Class="PipeSystem.CompProperties_ResourceStorage">
+         <li MayRequire="VanillaExpanded.VChemfuelE" Class="PipeSystem.CompProperties_ResourceStorage">
         <pipeNet>VCHE_ChemfuelNet</pipeNet>
         <storageCapacity>150</storageCapacity>
         <barSize>(1.3, 0.25)</barSize>
@@ -165,6 +166,7 @@
       <constructEffect>ConstructMetal</constructEffect>
       <researchPrerequisites>
          <li>BiofuelRefining</li>
+		 <li>MicroelectronicsBasics</li>
       </researchPrerequisites>
       <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
    </ThingDef>

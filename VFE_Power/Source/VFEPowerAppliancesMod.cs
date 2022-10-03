@@ -1,5 +1,4 @@
-﻿using PipeSystem;
-using RimWorld;
+﻿using RimWorld;
 using System.Text;
 using UnityEngine;
 using VanillaPowerExpanded;
@@ -16,7 +15,6 @@ namespace VFEPowerAppliances
         public int ticksCounter;
 
         public CompProperties_ChemfuelPump Props => (CompProperties_ChemfuelPump)props;
-        private CompResourceStorage resource;
 
         public override void PostExposeData()
         {
@@ -28,7 +26,6 @@ namespace VFEPowerAppliances
         {
             base.PostSpawnSetup(respawningAfterLoad);
             chemfuelPond = (Building_ChemfuelPond)parent.Map.thingGrid.ThingAt(parent.Position, ThingDef.Named("VPE_ChemfuelPond"));
-            resource = parent.GetComp<CompResourceStorage>();
         }
 
         public override void CompTick()
@@ -37,23 +34,10 @@ namespace VFEPowerAppliances
             ticksCounter++;
             if ((float)ticksCounter > ticksInADay * Props.fuelInterval)
             {
-                ticksCounter = 0;
-                if (resource != null)
-                {
-                    PipeNet pipeNet = ((CompResource)resource).PipeNet;
-                    if (pipeNet.connectors.Count > 1)
-                    {
-                        bool noCapacity = pipeNet.AvailableCapacity <= 0f;
-                        if (!noCapacity)
-                        {
-                            pipeNet.DistributeAmongStorage(Props.fuelProduced);
-                            return;
-                        }
-                    }
-                }
                 Thing thing = ThingMaker.MakeThing(ThingDefOf.Chemfuel);
                 thing.stackCount = Props.fuelProduced;
                 GenPlace.TryPlaceThing(thing, parent.Position, parent.Map, ThingPlaceMode.Near);
+                ticksCounter = 0;
             }
         }
 

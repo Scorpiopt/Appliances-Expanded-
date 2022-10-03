@@ -12,10 +12,10 @@
                     <xpath>Defs/ThingDef[defName="PS_DeepchemRefinery"]/comps/li[@Class="PipeSystem.CompProperties_ResourceProcessor"]/results</xpath>
                         <value>
                                       <li>
-                                        <countNeeded>300</countNeeded>
+                                        <countNeeded>150</countNeeded>
                                         <eachTicks>14000</eachTicks>
                                         <thing>Synthread</thing>
-                                        <thingCount>75</thingCount>
+                                        <thingCount>35</thingCount>
                                     </li>
                         </value>
                 </li>

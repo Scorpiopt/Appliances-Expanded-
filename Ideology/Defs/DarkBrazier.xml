@@ -1,9 +1,25 @@
+ 
+ 
+ 
+
 <Defs>
-    <!-- Chemfuel brazier -->
-    <ThingDef Name="Brazier" ParentName="FurnitureBase">
-        <defName>CA_ChemfuelBrazier</defName>
-        <label>chemfuel brazier</label>
-        <description>A Chemfuel Brazier. Will light the surroundings and create heat.</description>
+
+<ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FurnitureBase">
+        <defName>CA_ChemfuelBrazierDark</defName>
+        <label>Darklight chemfuel brazier</label>
+        <description>A Darklight Chemfuel Brazier. Will light the surroundings and create heat.</description>
+<graphicData>
+            <texPath>Things/Buildings/Misc/ChemfuelBrazierDark/ChemfuelBrazierDark</texPath> <!-- Replace texture here -->
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(0.55, 0.35, 0.3)</volume>
+                <offset>(0, 0, -0.28)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.2,0.3,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
         <category>Building</category>
         <tickerType>Normal</tickerType>
         <drawerType>RealtimeOnly</drawerType>
@@ -43,7 +59,7 @@
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>10</glowRadius>
-                <glowColor>(252,187,113,0)</glowColor>
+                <glowColor>(78, 226, 229, 0)</glowColor><!-- This is a specific darklight color, make sure it matches DarklightUtility.IsDarklight -->
             </li>
             <li Class="CompProperties_HeatPusher">
                 <compClass>CompHeatPusherPowered</compClass>
@@ -89,21 +105,6 @@
         <researchPrerequisites>
             <li>ComplexFurniture</li>
         </researchPrerequisites>
-        <graphicData>
-            <!-- art+to -->
-            <texPath>Things/Buildings/Misc/ChemfuelBrazier/ChemfuelBrazier</texPath> <!-- Replace texture here -->
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <shadowData>
-                <volume>(0.55, 0.35, 0.3)</volume>
-                <offset>(0, 0, -0.28)</offset>
-            </shadowData>
-            <damageData>
-                <rect>(0.2,0.3,0.6,0.6)</rect>
-            </damageData>
-        </graphicData>
+        
     </ThingDef>
-
-
-
-</Defs>
+	</Defs>
