@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+      <value>
+    <li>CA_ChemfuelSmithy</li>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="DoBillsSmelter"]/fixedBillGiverDefs</xpath>
+      <value>
+    <li>CA_ChemfuelSmelter</li>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+      <value>
+    <li>CE_ChemfuelStove</li>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/WorkGiverDef[defName="DoBillsCremate"]/fixedBillGiverDefs</xpath>
+      <value>
+    <li>CA_ChemfuelCrematorium</li>
+      </value>
+    </Operation>
+</Patch>

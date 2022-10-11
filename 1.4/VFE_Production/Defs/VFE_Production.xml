@@ -1,0 +1,194 @@
+<Defs>
+    <!-- Large chemfuel stove -->
+    <ThingDef ParentName="BenchBase">
+        <defName>CA_ChemfuelStoveLarge</defName>
+        <label>large chemfuel stove</label>
+        <description>A large size manufacturing stove with multiple ovens that run on chemfuel to prepare meals and cook significantly faster.</description>
+        <thingClass>Building_WorkTable_HeatPush</thingClass>
+        <graphicData>
+          <texPath>Things/Buildings/Workbenches/ChemfuelLargeStove/ChemfuelLargeStove</texPath> <!-- Replace texture here -->
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(7,4)</drawSize>
+          <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+          </damageData>
+        </graphicData>
+        <constructEffect>ConstructMetal</constructEffect>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <minifiedDef />
+        <thingCategories Inherit="false" />
+	<tickerType>Normal</tickerType>
+        <size>(5,2)</size>
+        <statBases>
+          <MaxHitPoints>300</MaxHitPoints>
+          <WorkToBuild>5000</WorkToBuild>
+          <Flammability>1.0</Flammability>
+          <WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
+        </statBases>
+        <costList>
+          <Steel>160</Steel>
+          <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <inspectorTabs>
+          <li>ITab_Bills</li>
+        </inspectorTabs>
+        <comps>
+          <li Class="CompProperties_AffectedByFacilities">
+            <linkableFacilities>
+              <li>ToolCabinet</li>
+              <li>VFE_KitchenSinkCabinet</li>
+            </linkableFacilities>
+          </li>
+          <li Class="CompProperties_Flickable"/>
+          <li Class="CompProperties_Refuelable">
+            <fuelConsumptionRate>12.0</fuelConsumptionRate>
+            <fuelCapacity>120.0</fuelCapacity>
+            <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+            <fuelFilter>
+                <thingDefs>
+                    <li>Chemfuel</li>
+                </thingDefs>
+            </fuelFilter>
+            <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        </li>
+          <li Class="CompProperties_Breakdownable"/>
+          <li Class="CompProperties_HeatPusher">
+            <compClass>CompHeatPusherPowered</compClass>
+            <heatPerSecond>3</heatPerSecond>
+          </li>
+        </comps>
+        <building>
+          <isMealSource>true</isMealSource>
+          <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+          <heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
+        </building>
+        <designationHotKey>Misc8</designationHotKey>
+        <placeWorkers>
+          <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <researchPrerequisites>
+          <li>VFE_Manufacturing</li>
+        </researchPrerequisites>
+        <modExtensions>
+          <li Class="RecipeInheritance.ThingDefExtension">
+            <inheritRecipesFrom>
+              <li>ElectricStove</li>
+            </inheritRecipesFrom>
+          </li>
+        </modExtensions>
+      </ThingDef>
+
+    <!-- Large chemfuel smithy -->
+    <ThingDef ParentName="BenchBase">
+        <defName>CE_FueledSmithyLarge</defName>
+        <label>large chemfuel-powered smithy</label>
+        <description>A huge chemfuel-powered work center for smithing non-mechanical weapons and tools. Consumes a lot of chemfuel.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Things/Buildings/Workbenches/ChemfuelLargeSmithy/ChemfuelLargeSmithy</texPath> <!-- Replace texture here -->
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(7,4)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.35, 0.59)</volume>
+                <offset>(0, 0, 0.08)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+	<tickerType>Normal</tickerType>
+        <constructEffect>ConstructWood</constructEffect>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <minifiedDef />
+        <thingCategories Inherit="false" />
+        <size>(5,2)</size>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-3</Cleanliness>
+            <WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
+        </statBases>
+        <costList>
+            <Steel>200</Steel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <recipes />
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>ToolCabinet</li>
+                    <li>VFE_SmithyCabinet</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>15.0</fuelConsumptionRate>
+                <fuelCapacity>150.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+            </li>
+            <li Class="CompProperties_Breakdownable" />
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>4</heatPerSecond>
+            </li>
+        </comps>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <designationHotKey>Misc7</designationHotKey>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>Smithing</li>
+            <li>VFE_Manufacturing</li>
+        </researchPrerequisites>
+        <modExtensions>
+            <li Class="RecipeInheritance.ThingDefExtension">
+                <inheritRecipesFrom>
+                    <li>ElectricSmithy</li>
+                </inheritRecipesFrom>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

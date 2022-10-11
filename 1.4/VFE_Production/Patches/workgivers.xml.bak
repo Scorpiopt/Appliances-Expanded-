@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	  </Operation>
+	
+	    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+        <value>
+			<li>CE_FueledSmithyLarge</li>
+        </value>
+    </Operation>
+</Patch>
+<Patch>
+<Operation>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorkGiverDef[defName='DoBillsCook']/fixedBillGiverDefs</xpath>
+				<value>
+					<li>CA_ChemfuelStoveLarge</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
