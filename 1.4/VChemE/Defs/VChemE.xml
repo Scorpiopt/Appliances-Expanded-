@@ -41,21 +41,22 @@
 				<explosiveRadius>8</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
 			</li>
+			<li Class="PipeSystem.CompProperties_ResourceStorage">
+				<pipeNet>VCHE_DeepchemNet</pipeNet>
+				<storageCapacity>5</storageCapacity>
+				<drawStorageBar>false</drawStorageBar>
+				<addStorageInfo>false</addStorageInfo>
+				<addTransferGizmo>false</addTransferGizmo>
+			</li>
 			<li Class="PipeSystem.CompProperties_DeepExtractor">
 				<compClass>VChemEAppliances.CompPumpjackInfinite</compClass>
 				<pipeNet>VCHE_DeepchemNet</pipeNet>
 				<deepThing>VCHE_Deepchem</deepThing>
-				<ticksPerPortion>120</ticksPerPortion>
+				<ticksPerPortion>720</ticksPerPortion>
 				<useDeepCountPerPortion>false</useDeepCountPerPortion>
 				<soundAmbient>VCHE_PumpjackAmbient</soundAmbient>
 			</li>
-			<li Class="VCHE.CompProperties_PumpjackAnimation"/>
 		</comps>
-		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
-				<deepResourcesOnGUI>true</deepResourcesOnGUI>
-			</li>
-		</modExtensions>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MarketValue>1500</MarketValue>

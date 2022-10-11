@@ -14,7 +14,7 @@ namespace AppliancesExpanded
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            compRefuelable = this.GetComp<CompRefuelable>();
+            compRefuelable = GetComp<CompRefuelable>();
         }
         public override void TickRare()
         {
@@ -34,7 +34,7 @@ namespace AppliancesExpanded
                 {
                     num = temperature - 40f;
                 }
-                float num2 = 1f - num * 0.0076923077f;
+                float num2 = 1f - (num * 0.0076923077f);
                 if (num2 < 0f)
                 {
                     num2 = 0f;
@@ -67,14 +67,14 @@ namespace AppliancesExpanded
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            compRefuelable = this.GetComp<CompRefuelable>();
+            compRefuelable = GetComp<CompRefuelable>();
         }
         public override void TickRare()
         {
             if (compRefuelable.HasFuel)
             {
                 float ambientTemperature = base.AmbientTemperature;
-                float num = ((ambientTemperature < 20f) ? 1f : ((!(ambientTemperature > 120f)) ? Mathf.InverseLerp(120f, 20f, ambientTemperature) : 0f));
+                float num = (ambientTemperature < 20f) ? 1f : ((!(ambientTemperature > 120f)) ? Mathf.InverseLerp(120f, 20f, ambientTemperature) : 0f);
                 float energyLimit = compTempControl.Props.energyPerSecond * num * 4.16666651f;
                 float num2 = GenTemperature.ControlTemperatureTempChange(base.Position, base.Map, energyLimit, compTempControl.targetTemperature);
                 bool flag = !Mathf.Approximately(num2, 0f);
