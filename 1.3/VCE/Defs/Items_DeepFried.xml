@@ -101,7 +101,7 @@
 			<li>
 				<label>ate deep fried food</label>
 				<description>Greasy food. So delicious.</description>
-				<baseMoodEffect>3</baseMoodEffect>
+				<baseMoodEffect>1</baseMoodEffect>
 			</li>
 		</stages>	
 	</ThoughtDef>

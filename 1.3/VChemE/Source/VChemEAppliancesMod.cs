@@ -12,9 +12,9 @@ namespace VChemEAppliances
     [StaticConstructorOnStartup]
     public class CompPumpjackInfinite : ThingComp
     {
-        private static readonly Material PumpjackBottom = MaterialPool.MatFrom("Things/Buildings/Special/InfinitDeepchemExtractor/InfinitDeepchemExtractor_Bottom");
+        private static readonly Material PumpjackBottom = MaterialPool.MatFrom("Things/Building/Production/DeepchemPumpjack_Bottom");
 
-        private static readonly Material PumpjackPump = MaterialPool.MatFrom("Things/Buildings/Special/InfinitDeepchemExtractor/DeepchemPump");
+        private static readonly Material PumpjackPump = MaterialPool.MatFrom("Things/Building/Production/DeepchemPumpjack_Pump");
 
         private Vector3 pumpPos = Vector3.zero;
 

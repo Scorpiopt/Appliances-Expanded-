@@ -62,7 +62,7 @@
       </researchPrerequisites>
       <comps>
          <li Class="CompProperties_Refuelable">
-            <fuelConsumptionRate>160.0</fuelConsumptionRate>
+            <fuelConsumptionRate>10.0</fuelConsumptionRate>
             <fuelCapacity>40</fuelCapacity>
             <fuelFilter>
                <thingDefs>
@@ -165,7 +165,7 @@
       </researchPrerequisites>
       <comps>
          <li Class="CompProperties_Refuelable">
-            <fuelConsumptionRate>5.0</fuelConsumptionRate>
+            <fuelConsumptionRate>8.0</fuelConsumptionRate>
             <fuelCapacity>20.0</fuelCapacity>
             <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
             <fuelFilter>

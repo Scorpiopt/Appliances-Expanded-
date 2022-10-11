@@ -51,12 +51,11 @@
           <li Class="CompProperties_AffectedByFacilities">
             <linkableFacilities>
               <li>ToolCabinet</li>
-              <li>VFE_KitchenSinkCabinet</li>
             </linkableFacilities>
           </li>
           <li Class="CompProperties_Flickable"/>
           <li Class="CompProperties_Refuelable">
-            <fuelConsumptionRate>12.0</fuelConsumptionRate>
+            <fuelConsumptionRate>25.0</fuelConsumptionRate>
             <fuelCapacity>120.0</fuelCapacity>
             <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
             <fuelFilter>
@@ -155,7 +154,7 @@
             </li>
             <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Refuelable">
-                <fuelConsumptionRate>15.0</fuelConsumptionRate>
+                <fuelConsumptionRate>35.0</fuelConsumptionRate>
                 <fuelCapacity>150.0</fuelCapacity>
                 <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
                 <fuelFilter>

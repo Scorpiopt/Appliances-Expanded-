@@ -50,7 +50,7 @@
 			</li>
 			<li Class="VCHE.CompProperties_Pumpjack">
 				<compClass>VChemEAppliances.CompPumpjackInfinite</compClass>
-				<ticksPerPortion>120</ticksPerPortion>
+				<ticksPerPortion>720</ticksPerPortion>
 				<ambientSound>VCHE_PumpjackAmbient</ambientSound>
 			</li>
 		</comps>
