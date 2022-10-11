@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- Throne requirement -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Brazier"]/things</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CA_ChemfuelBrazier</li>
+		</value>
+	</Operation>
+	
+	<!-- Brazier must be lit -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_AllThingsAnyOfAreGlowing"][labelKey="RoomRequirementAllBraziersMustBeLit"]/things</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CA_ChemfuelBrazier</li>
+		</value>
+	</Operation>
+	
+	<!-- Add meditation focus to vanilla/DLC items -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Campfire" or defName="TorchLamp" or defName="DarktorchFungus" or defName="Darktorch" or defName="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CA_ChemfuelBrazier</li>
+		</value>
+	</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Brazier"]/things</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CA_ChemfuelBrazierDark</li>
+		</value>
+	</Operation>
+	
+	<!-- Brazier must be lit -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_AllThingsAnyOfAreGlowing"][labelKey="RoomRequirementAllBraziersMustBeLit"]/things</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CA_ChemfuelBrazierDark</li>
+		</value>
+	</Operation>
+	
+	<!-- Add meditation focus to vanilla/DLC items -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Campfire" or defName="TorchLamp" or defName="DarktorchFungus" or defName="Darktorch" or defName="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CA_ChemfuelBrazierDark</li>
+		</value>
+	</Operation>
+</Patch>
