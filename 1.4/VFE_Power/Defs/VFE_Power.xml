@@ -62,7 +62,7 @@
 				<glowColor>(90,140,90,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>GasNetwork.CompGasHeatPusher</compClass>
+				<compClass>PipeSystem.CompHeatPusherNeedResource</compClass>
 				<heatPerSecond>8</heatPerSecond>
 			</li>
 			

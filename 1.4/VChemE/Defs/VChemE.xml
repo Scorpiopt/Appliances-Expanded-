@@ -27,33 +27,35 @@
 			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
 		</building>
 		<placeWorkers>
-			<li>VCHE.PlaceWorker_Pumpjack</li>
+			<li>PipeSystem.PlaceWorker_DeepExtractor</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>600</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>8</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
 			</li>
-			<li Class="PipeSystem.CompProperties_ResourceStorage">
-				<pipeNet>VCHE_DeepchemNet</pipeNet>
-				<storageCapacity>5</storageCapacity>
-				<drawStorageBar>false</drawStorageBar>
-				<addStorageInfo>false</addStorageInfo>
-				<addTransferGizmo>false</addTransferGizmo>
-			</li>
-			<li Class="VCHE.CompProperties_Pumpjack">
+			<li Class="PipeSystem.CompProperties_DeepExtractor">
 				<compClass>VChemEAppliances.CompPumpjackInfinite</compClass>
+				<pipeNet>VCHE_DeepchemNet</pipeNet>
+				<deepThing>VCHE_Deepchem</deepThing>
 				<ticksPerPortion>120</ticksPerPortion>
-				<ambientSound>VCHE_PumpjackAmbient</ambientSound>
+				<useDeepCountPerPortion>false</useDeepCountPerPortion>
+				<soundAmbient>VCHE_PumpjackAmbient</soundAmbient>
 			</li>
+			<li Class="VCHE.CompProperties_PumpjackAnimation"/>
 		</comps>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<deepResourcesOnGUI>true</deepResourcesOnGUI>
+			</li>
+		</modExtensions>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MarketValue>1500</MarketValue>
@@ -82,8 +84,8 @@
 			<li>ExoticBuilding</li>
 		</tradeTags>
 		<researchPrerequisites>
-		<li>MicroelectronicsBasics</li>
-	</researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
 	</ThingDef>
-	
+
 </Defs>

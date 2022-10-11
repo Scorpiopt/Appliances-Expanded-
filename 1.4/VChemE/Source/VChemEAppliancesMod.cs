@@ -295,10 +295,6 @@ namespace VChemEAppliances
 
         private void DrawMat(Material mat, Vector3 drawPos)
         {
-            //IL_0006: Unknown result type (might be due to invalid IL or missing references)
-            //IL_0015: Unknown result type (might be due to invalid IL or missing references)
-            //IL_0029: Unknown result type (might be due to invalid IL or missing references)
-            //IL_002e: Unknown result type (might be due to invalid IL or missing references)
             Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(drawPos, parent.Rotation.AsQuat, new Vector3(3f, 1f, 3f)), mat, 0);
         }
 
