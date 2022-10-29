@@ -84,7 +84,7 @@
 		<designationHotKey>Misc3</designationHotKey>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
-			<li>Electricity</li>
+			<li>Fabrication</li>
 			<li>VHGE_GasExtraction</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
