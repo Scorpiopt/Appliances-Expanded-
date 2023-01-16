@@ -48,7 +48,7 @@
 					<max>2500</max>
 				</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
-				<showMessageIfOwned>true</showMessageIfOwned>
+				<showMessageIfOwned>false</showMessageIfOwned>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>

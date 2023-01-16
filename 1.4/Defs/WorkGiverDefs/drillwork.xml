@@ -13,6 +13,7 @@
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
+    <canBeDoneByMechs>false</canBeDoneByMechs>
   </WorkGiverDef>
 
 </Defs>
