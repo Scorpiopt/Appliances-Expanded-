@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>CA_InfiniteDeepchemPumpjack</defName>
 		<label>infinite deepchem reactor</label>
-		<description>Slowly extracts deepchem using  atoms extracted from the air and deep crust. A sustainable way to extract Deepchem indefinitely.</description>
+		<description>Slowly extracts deepchem using atoms extracted from the air and deep crust. A sustainable way to extract Deepchem indefinitely.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Things/Buildings/Special/InfinitDeepchemExtractor/InfinitDeepchemExtractor</texPath>

@@ -296,7 +296,7 @@
 	<!-- Chemfuel standing lamp -->
 	<ThingDef ParentName="StandingLampBase">
 		<defName>CA_ChemfuelStandingLamp</defName>
-		<label>chemfuel-powered  standing lamp</label>
+		<label>chemfuel-powered standing lamp</label>
 		<description>An electrical standing lamp that lights an area. People need light to move and work at full speed.</description>
 		<designationHotKey>Misc11</designationHotKey>
 		<graphicData>
@@ -315,7 +315,7 @@
 				<glowColor>(217,217,208,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>125</fuelConsumptionRate>
+				<fuelConsumptionRate>1</fuelConsumptionRate>
 				<fuelCapacity>10.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
@@ -509,7 +509,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>CA_WoodFiredTurbine</defName>
 		<label>wood-fired turbine</label>
-		<description>A wood powered turbojet generator . Although cumbersome, it produces a lot power. Must be refueled by hand.</description>
+		<description>A wood powered turbojet generator. Although cumbersome, it produces a lot power. Must be refueled by hand.</description>
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -812,7 +812,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>SCP_ChemDrill</defName>
 		<label>Chemfuel powered excavator</label>
-		<description>A Chemfuel powered  deep-crust drilling excavator for extracting minerals from deep under the surface. Great for caravaning due to its portability.</description>
+		<description>A Chemfuel powered deep-crust drilling excavator for extracting minerals from deep under the surface. Great for caravaning due to its portability.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Buildings/Drill/ChemPoweredExcavator</texPath>

@@ -213,7 +213,7 @@
    <ThingDef ParentName="BuildingBase">
       <defName>CE_ChemfuelPot</defName>
       <label>chemfuel pot</label>
-      <description>Soup is ancient as time itself, well almost .This is a chemfuel powered cooking pot, which needs chemfuel to work.</description>
+      <description>Soup is ancient as time itself, well almost. This is a chemfuel powered cooking pot, which needs chemfuel to work.</description>
       <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
       <drawerType>MapMeshAndRealTime</drawerType>
       <graphicData>

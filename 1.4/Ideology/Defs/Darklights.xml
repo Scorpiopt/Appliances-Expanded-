@@ -5,7 +5,7 @@
 	<ThingDef ParentName="LampBase">
 		<defName>CA_SunlampDark</defName>
 		<label>Darklight chemfuel sun lamp</label>
-		<description>An industrial lamp which lights an area  with Darklight enough to grow crops, but consumes a huge amount of chemfuel. It also has a slightly lower lighting radius. Automatically turns itself off at night.</description>
+		<description>An industrial lamp which lights an area with Darklight enough to grow crops, but consumes a huge amount of chemfuel. It also has a slightly lower lighting radius. Automatically turns itself off at night.</description>
 		<thingClass>Building_SunLamp</thingClass>
 		<graphicData>
 			<texPath>Things/Buildings/Production/ChemfuelSunLampDark/ChemfuelSunLampDark</texPath><!-- Replace texture here -->
@@ -54,7 +54,7 @@
 	<!-- Chemfuel standing lamp -->
 	<ThingDef ParentName="StandingLampBase">
 		<defName>CA_ChemfuelStandingLampDark</defName>
-		<label>Darklightchemfuel-powered  standing  lamp</label>
+		<label>Darklightchemfuel-powered standing lamp</label>
 		<description>A chemfuel standing lamp that lights an area. People need light to move and work at full speed.</description>
 		<designationHotKey>Misc11</designationHotKey>
 		<graphicData>
