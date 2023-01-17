@@ -14,7 +14,7 @@
 		<li>1.4</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/Royalty</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/Ideology</li>
-        <li IfModActive="VanillaExpanded.VFEPower">1.4/VFE_Power</li>
+        <li IfModActive="VanillaExpanded.VChemfuelE">1.4/VFE_PowerVChemE</li>
         <li IfModActive="VanillaExpanded.HelixienGas">1.4/VHelixE</li>
         <li IfModActive="VanillaExpanded.VCookE">1.4/VCE</li>
         <li IfModActive="VanillaExpanded.VChemfuelE">1.4/VChemE</li>
