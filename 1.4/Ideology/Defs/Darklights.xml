@@ -54,7 +54,7 @@
 	<!-- Chemfuel standing lamp -->
 	<ThingDef ParentName="StandingLampBase">
 		<defName>CA_ChemfuelStandingLampDark</defName>
-		<label>Darklightchemfuel-powered standing lamp</label>
+		<label>Darklight chemfuel-powered standing lamp</label>
 		<description>A chemfuel standing lamp that lights an area. People need light to move and work at full speed.</description>
 		<designationHotKey>Misc11</designationHotKey>
 		<graphicData>

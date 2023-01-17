@@ -297,7 +297,7 @@
 	<ThingDef ParentName="StandingLampBase">
 		<defName>CA_ChemfuelStandingLamp</defName>
 		<label>chemfuel-powered standing lamp</label>
-		<description>An electrical standing lamp that lights an area. People need light to move and work at full speed.</description>
+		<description>An chemfuel-powered standing lamp that lights an area. People need light to move and work at full speed.</description>
 		<designationHotKey>Misc11</designationHotKey>
 		<graphicData>
 			<texPath>Things/Buildings/Production/ChemfuelExternalLamp/ChemfuelExternalLamp</texPath>
