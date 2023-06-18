@@ -23,7 +23,7 @@
 
 					</categories>
 				</filter>
-				<count>1</count>
+				<count>5</count>
 			</li>
 
 		</ingredients>
@@ -53,7 +53,7 @@
 			</disallowedCategories>
 		</defaultIngredientFilter>
 		<products>
-			<CE_DeepFriedBigMeatNoBadHediff>4</CE_DeepFriedBigMeatNoBadHediff>
+			<CE_DeepFriedBigMeatNoBadHediff>20</CE_DeepFriedBigMeatNoBadHediff>
 		</products>
 
 	</RecipeDef>
@@ -80,7 +80,7 @@
 
 					</categories>
 				</filter>
-				<count>1</count>
+				<count>5</count>
 			</li>
 
 		</ingredients>
@@ -103,7 +103,7 @@
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<products>
-			<CE_DeepFriedVegetablesNoBadHediff>4</CE_DeepFriedVegetablesNoBadHediff>
+			<CE_DeepFriedVegetablesNoBadHediff>20</CE_DeepFriedVegetablesNoBadHediff>
 		</products>
 
 	</RecipeDef>

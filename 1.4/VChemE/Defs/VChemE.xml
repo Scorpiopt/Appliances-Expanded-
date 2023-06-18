@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Things/Buildings/Special/InfinitDeepchemExtractor/InfinitDeepchemExtractor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3, 3)</drawSize>
+			<drawSize>(4,4)</drawSize>
 			<drawRotated>false</drawRotated>
 			<shadowData>
 				<volume>(1.8, 1.0, 0.2)</volume>
@@ -70,7 +70,6 @@
 			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
 		<tickerType>Normal</tickerType>
-		<size>(2, 2)</size>
 		<fillPercent>1.0</fillPercent>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<designationCategory>Power</designationCategory>

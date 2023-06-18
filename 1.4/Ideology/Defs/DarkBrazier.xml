@@ -1,14 +1,10 @@
- 
- 
- 
-
 <Defs>
 
-<ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FurnitureBase">
+    <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FurnitureBase">
         <defName>CA_ChemfuelBrazierDark</defName>
         <label>Darklight chemfuel brazier</label>
         <description>A Darklight Chemfuel Brazier. Will light the surroundings and create heat.</description>
-<graphicData>
+        <graphicData>
             <texPath>Things/Buildings/Misc/ChemfuelBrazierDark/ChemfuelBrazierDark</texPath> <!-- Replace texture here -->
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
@@ -105,6 +101,6 @@
         <researchPrerequisites>
             <li>ComplexFurniture</li>
         </researchPrerequisites>
-        
+
     </ThingDef>
-	</Defs>
+</Defs>

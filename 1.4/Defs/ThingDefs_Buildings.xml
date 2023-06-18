@@ -54,11 +54,11 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_TempControl">
 				<energyPerSecond>-21</energyPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<designationCategory>Temperature</designationCategory>
 		<designationHotKey>Misc5</designationHotKey>
@@ -129,7 +129,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_TempControl">
 				<energyPerSecond>21</energyPerSecond>
 			</li>
@@ -137,7 +137,7 @@
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,150,100,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<designationCategory>Temperature</designationCategory>
 		<designationHotKey>Misc2</designationHotKey>
@@ -212,7 +212,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>
 				<glowColor>(217,112,33,0)</glowColor>
@@ -270,7 +270,7 @@
 				<glowRadius>20</glowRadius>
 				<glowColor>(370,370,370,0)</glowColor>
 			</li>
-            
+
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>18</fuelConsumptionRate>
 				<fuelCapacity>90.0</fuelCapacity>
@@ -313,6 +313,8 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>12</glowRadius>
 				<glowColor>(217,217,208,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1</fuelConsumptionRate>
@@ -324,7 +326,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Styleable" />
 		</comps>
 		<tickerType>Normal</tickerType>
 	</ThingDef>
@@ -474,7 +476,7 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>
 				<glowColor>(217,112,33,0)</glowColor>
@@ -483,7 +485,7 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>12</heatPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
@@ -552,7 +554,7 @@
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>75.0</fuelConsumptionRate>
 				<fuelCapacity>200.0</fuelCapacity>
@@ -571,7 +573,7 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>8</heatPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
@@ -629,7 +631,7 @@
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>18.0</fuelConsumptionRate>
 				<fuelCapacity>90.0</fuelCapacity>
@@ -648,7 +650,7 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>8</heatPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
@@ -676,6 +678,8 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>18</glowRadius>
 				<glowColor>(217,217,208,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
@@ -687,7 +691,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Styleable" />
 		</comps>
 		<tickerType>Normal</tickerType>
 	</ThingDef>
@@ -786,6 +790,8 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>12</glowRadius>
 				<glowColor>(217,217,208,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>0.5</fuelConsumptionRate>
@@ -797,7 +803,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<building>
 			<isEdifice>false</isEdifice>
@@ -882,8 +888,8 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>12</heatPerSecond>
@@ -891,7 +897,7 @@
 			<li Class="CompProperties_DeepDrill">
 				<compClass>AppliancesExpanded.CompChemfuelDeepDrill</compClass>
 			</li>
-			<li Class="CompProperties_CreatesInfestations"/>
+			<li Class="CompProperties_CreatesInfestations" />
 		</comps>
 	</ThingDef>
 </Defs>
