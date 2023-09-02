@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Infinite chemfuel pump -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase" MayRequire="VanillaExpanded.VFEPower">
 		<defName>CE_InfiniteChemfuelPump</defName>
 		<label>infinite chemfuel pump</label>
 		<description>A large pump capable of generating chemfuel, using atoms extracted from the air and crust. Needs a chemfuel pond to work but will not spend the pond's capacity.</description>
