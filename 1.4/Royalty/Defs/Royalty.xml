@@ -1,6 +1,6 @@
 <Defs>
     <!-- Chemfuel brazier -->
-    <ThingDef Name="Brazier" ParentName="FurnitureBase">
+    <ThingDef ParentName="FurnitureBase">
         <defName>CA_ChemfuelBrazier</defName>
         <label>chemfuel brazier</label>
         <description>A Chemfuel Brazier. Will light the surroundings and create heat.</description>
