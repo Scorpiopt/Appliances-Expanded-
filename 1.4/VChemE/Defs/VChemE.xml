@@ -16,6 +16,7 @@
 				<offset>(0.0, 0.0, -0.4)</offset>
 			</shadowData>
 		</graphicData>
+		<size>(4, 4)</size>
 		<thingCategories>
 			<li>BuildingsSpecial</li>
 		</thingCategories>
