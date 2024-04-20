@@ -1,0 +1,53 @@
+ <Defs>
+
+
+	<!-- Chemfuel sunlamp -->
+	<ThingDef ParentName="LampBase">
+		<defName>CA_SunlampDark</defName>
+		<label>Darklight chemfuel sun lamp</label>
+		<description>An industrial lamp which lights an area with Darklight enough to grow crops, but consumes a huge amount of chemfuel. It also has a slightly lower lighting radius. Automatically turns itself off at night.</description>
+		<thingClass>Building_SunLamp</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/Production/ChemfuelSunLampDark/ChemfuelSunLampDark</texPath><!-- Replace texture here -->
+		</graphicData>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToBuild>330</WorkToBuild>
+			<Mass>4.5</Mass>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>10.0</overlightRadius>
+				<glowRadius>20</glowRadius>
+				<glowColor>(78, 226, 229, 0)</glowColor>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>18.0</fuelConsumptionRate>
+				<fuelCapacity>90.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Schedule">
+				<startTime>0.25</startTime>
+				<endTime>0.8</endTime>
+				<offMessage>Off for plant resting period</offMessage>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3</heatPerSecond>
+			</li>
+		</comps>
+		<specialDisplayRadius>5.8</specialDisplayRadius>
+         <researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>

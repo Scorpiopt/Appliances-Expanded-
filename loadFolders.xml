@@ -20,4 +20,15 @@
         <li IfModActive="VanillaExpanded.VChemfuelE">1.4/VChemE</li>
         <li IfModActive="VanillaExpanded.VFEProduction">1.4/VFE_Production</li>
 	</v1.4>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/Ideology</li>
+        <li IfModActive="VanillaExpanded.VChemfuelE">1.5/VFE_PowerVChemE</li>
+        <li IfModActive="VanillaExpanded.HelixienGas">1.5/VHelixE</li>
+        <li IfModActive="VanillaExpanded.VCookE">1.5/VCE</li>
+        <li IfModActive="VanillaExpanded.VChemfuelE">1.5/VChemE</li>
+        <li IfModActive="VanillaExpanded.VFEProduction">1.5/VFE_Production</li>
+	</v1.5>
 </loadFolders>

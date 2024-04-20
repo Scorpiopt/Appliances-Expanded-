@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Power</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="CE_InfiniteChemfuelPump"]/comps</xpath>
+			<value>
+				<li Class="PipeSystem.CompProperties_Resource">
+					<pipeNet>VCHE_ChemfuelNet</pipeNet>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
