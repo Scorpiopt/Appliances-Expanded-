@@ -54,11 +54,11 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_TempControl">
 				<energyPerSecond>-21</energyPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
 		<designationHotKey>Misc5</designationHotKey>
@@ -129,7 +129,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_TempControl">
 				<energyPerSecond>21</energyPerSecond>
 			</li>
@@ -137,7 +137,7 @@
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,150,100,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
 		<designationHotKey>Misc2</designationHotKey>
@@ -212,7 +212,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>
 				<glowColor>(217,112,33,0)</glowColor>
@@ -242,7 +242,7 @@
 				<inheritRecipesFrom>
 					<li>ElectricCrematorium</li>
 				</inheritRecipesFrom>
-			</li>
+</li>
 		</modExtensions>
 	</ThingDef>
 	<!-- Chemfuel sunlamp -->
@@ -289,7 +289,7 @@
 		<specialDisplayRadius>5.8</specialDisplayRadius>
 	</ThingDef>
 	<!-- Chemfuel standing lamp -->
-	<ThingDef ParentName="StandingLampBase">
+	<ThingDef ParentName="LampBase">
 		<defName>CA_ChemfuelStandingLamp</defName>
 		<label>chemfuel-powered standing lamp</label>
 		<description>An chemfuel-powered standing lamp that lights an area. People need light to move and work at full speed.</description>
@@ -321,7 +321,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<tickerType>Normal</tickerType>
 	</ThingDef>
@@ -391,7 +391,7 @@
 				<linkableFacilities>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
-			</li>
+</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -405,7 +405,7 @@
 				<inheritRecipesFrom>
 					<li>ElectricSmithy</li>
 				</inheritRecipesFrom>
-			</li>
+</li>
 		</modExtensions>
 	</ThingDef>
 	<!-- Chemfuel smelter -->
@@ -471,7 +471,7 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>
 				<glowColor>(217,112,33,0)</glowColor>
@@ -480,7 +480,7 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>12</heatPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
@@ -499,7 +499,7 @@
 					<li>ElectricSmelter</li>
 				</inheritRecipesFrom>
 				<!-- <allowedProductFilter></allowedProductFilter><disallowedProductFilter></disallowedProductFilter><allowedRecipes></allowedRecipes><disallowedRecipes></disallowedRecipes> -->
-			</li>
+</li>
 		</modExtensions>
 	</ThingDef>
 	<!-- Wood-fired turbine -->
@@ -549,7 +549,7 @@
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower>
 			</li>
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>75.0</fuelConsumptionRate>
 				<fuelCapacity>200.0</fuelCapacity>
@@ -568,7 +568,7 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>8</heatPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
@@ -626,7 +626,7 @@
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower>
 			</li>
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>18.0</fuelConsumptionRate>
 				<fuelCapacity>90.0</fuelCapacity>
@@ -645,7 +645,7 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>8</heatPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
@@ -657,7 +657,7 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 	<!-- Chemfuel floodlight -->
-	<ThingDef ParentName="StandingLampBase">
+	<ThingDef ParentName="LampBase">
 		<defName>CA_ChemfuelFloodlight</defName>
 		<label>chemfuel floodlight</label>
 		<description>A tall chemfuel-powered lamp that lights an area, able to be placed outside without catching fire, making it ideal for road lighting and only turns on at night.</description>
@@ -666,6 +666,13 @@
 			<texPath>Things/Buildings/Production/ChemfuelFloodlight/ChemfuelFloodlight</texPath>
 			<drawSize>(2,3.5)</drawSize>
 		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>10</Mass>
+			<Beauty>-5</Beauty>
+		</statBases>
 		<costList>
 			<Steel>80</Steel>
 		</costList>
@@ -686,7 +693,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<tickerType>Normal</tickerType>
 	</ThingDef>
@@ -762,10 +769,10 @@
 				<inheritRecipesFrom>
 					<li>FueledStove</li>
 				</inheritRecipesFrom>
-			</li>
+</li>
 		</modExtensions>
 	</ThingDef>
-	<ThingDef ParentName="StandingLampBase">
+	<ThingDef ParentName="LampBase">
 		<defName>CAS_ChemfuelWallLight</defName>
 		<label>Chemfuel wall light</label>
 		<graphicData>
@@ -779,15 +786,29 @@
 		<costList>
 			<Steel>20</Steel>
 		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<placeWorkers>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+		</placeWorkers>
 		<altitudeLayer>Item</altitudeLayer>
 		<description>A Chemfuel-powered wall light that lights an area. People need light to move and work at full speed. Can be safely placed outdoors.</description>
 		<comps Inherit="false">
-			<li Class="CompProperties_Glower">
-				<glowRadius>12</glowRadius>
-				<glowColor>(217,217,208,0)</glowColor>
-				<colorPickerEnabled>true</colorPickerEnabled>
-				<darklightToggle>true</darklightToggle>
+
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>12</glowRadius>
+						<glowColor>(217,217,208,0)</glowColor>
+						<colorPickerEnabled>true</colorPickerEnabled>
+						<darklightToggle>true</darklightToggle>
+					</li>
+				</colorOptions>
 			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>0.5</fuelConsumptionRate>
 				<fuelCapacity>10.0</fuelCapacity>
@@ -798,7 +819,7 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Flickable"/>
 		</comps>
 		<building>
 			<isEdifice>false</isEdifice>
@@ -883,8 +904,8 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>12</heatPerSecond>
@@ -892,7 +913,7 @@
 			<li Class="CompProperties_DeepDrill">
 				<compClass>AppliancesExpanded.CompChemfuelDeepDrill</compClass>
 			</li>
-			<li Class="CompProperties_CreatesInfestations" />
+			<li Class="CompProperties_CreatesInfestations"/>
 		</comps>
 	</ThingDef>
 </Defs>
