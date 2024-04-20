@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.4\\VChemE\\Source\\VChemEAppliances.csproj": {}
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.5\\VChemE\\Source\\VChemEAppliances.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.4\\VChemE\\Source\\VChemEAppliances.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.5\\VChemE\\Source\\VChemEAppliances.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.4\\VChemE\\Source\\VChemEAppliances.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.5\\VChemE\\Source\\VChemEAppliances.csproj",
         "projectName": "VChemEAppliances",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.4\\VChemE\\Source\\VChemEAppliances.csproj",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.5\\VChemE\\Source\\VChemEAppliances.csproj",
         "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.4\\VChemE\\Source\\obj\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Appliances-Expanded-\\1.5\\VChemE\\Source\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -29,6 +29,11 @@
           "net48": {
             "projectReferences": {}
           }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -38,22 +43,25 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.0.1, )"
+              "version": "[2.2.1, )"
             },
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[1.4.3514-beta, )"
+              "version": "[1.5.4069, )"
             },
             "Lib.Harmony": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[2.2.2, )"
+              "version": "[2.3.3, )"
             }
           }
         }
       },
       "runtimes": {
         "win": {
+          "#import": []
+        },
+        "win-arm64": {
           "#import": []
         },
         "win-x64": {
