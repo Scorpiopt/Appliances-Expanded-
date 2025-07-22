@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Infinite chemfuel pump -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>CE_InfiniteChemfuelPump</defName>
+		<label>infinite chemfuel pump</label>
+		<description>A large pump capable of generating chemfuel, using atoms extracted from the air and crust. Needs a chemfuel pond to work but will not spend the pond's capacity.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/Special/ChemfuelExtractor/ChemfuelExtractor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>1.0</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1.5</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(4,4)</size>
+		<costList>
+			<Steel>300</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="PipeSystem.CompProperties_SpawnerOrNet">
+				<pipeNet>VCHE_ChemfuelNet</pipeNet>
+				<!-- Vanilla part -->
+				<requiresPower>true</requiresPower>
+				<thingToSpawn>Chemfuel</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange>
+					<min>2500</min>
+					<max>2500</max>
+				</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(166, 20, 20,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0</explosiveRadius>
+				<explosiveExpandPerFuel>0.95</explosiveExpandPerFuel>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
+			<li MayRequire="VanillaExpanded.VChemfuelE" Class="PipeSystem.CompProperties_ResourceStorage">
+				<pipeNet>VCHE_ChemfuelNet</pipeNet>
+				<storageCapacity>150</storageCapacity>
+				<barSize>(1.3, 0.25)</barSize>
+				<margin>0.1</margin>
+				<centerOffset>(0, 0, 0.35)</centerOffset>
+				<extractOptions>
+					<texPath>UI/Gizmos/ExtractChemfuel</texPath>
+					<labelKey>VCHE_ExtractChemfuel</labelKey>
+					<descKey>VCHE_ExtractChemfuelDesc</descKey>
+					<extractAmount>150</extractAmount>
+					<thing>Chemfuel</thing>
+					<ratio>1</ratio>
+				</extractOptions>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>BiofuelRefining</li>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+</Defs>

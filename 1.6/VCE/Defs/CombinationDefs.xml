@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PipeSystem.ProcessDef>
+		<defName>CE_SimpleSoupRecipe</defName>
+		<label>Cook Simple Soup</label>
+		<description>Turns an uncooked simple soup into 10 cooked simple soups.</description>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoExtract>false</autoExtract>
+		<useIngredients>true</useIngredients>
+		<transfersIngredientList>true</transfersIngredientList>
+		<priorityInBillList>0</priorityInBillList>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedSoupSimple</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<ticks>120000</ticks>
+		<results>
+			<li>
+				<thing>VCE_CookedSoupSimple</thing>
+				<count>10</count>
+			</li>
+		</results>
+		<noPowerDestroysProgress>true</noPowerDestroysProgress>
+		<noPowerDestroysMessage>VCE_SoupFailurePower</noPowerDestroysMessage>
+		<noPowerDestroysInitialWarning>VCE_SoupFailurePowerWarning</noPowerDestroysInitialWarning>
+		<rareTicksToDestroy>10</rareTicksToDestroy>
+		<destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+	</PipeSystem.ProcessDef>
+	
+	<PipeSystem.ProcessDef>
+		<defName>CE_FineSoupRecipe</defName>
+		<label>Cook Fine Soup</label>
+		<description>Turns an uncooked fine soup into 10 cooked fine soups.</description>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<useIngredients>true</useIngredients>
+		<transfersIngredientList>true</transfersIngredientList>
+		<autoExtract>false</autoExtract>
+		<priorityInBillList>1</priorityInBillList>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedSoupFine</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<ticks>120000</ticks>
+		<results>
+			<li>
+				<thing>VCE_CookedSoupFine</thing>
+				<count>10</count>
+			</li>
+		</results>
+		<noPowerDestroysProgress>true</noPowerDestroysProgress>
+		<noPowerDestroysMessage>VCE_SoupFailurePower</noPowerDestroysMessage>
+		<noPowerDestroysInitialWarning>VCE_SoupFailurePowerWarning</noPowerDestroysInitialWarning>
+		<rareTicksToDestroy>10</rareTicksToDestroy>
+		<destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+	</PipeSystem.ProcessDef>
+	
+	<PipeSystem.ProcessDef>
+		<defName>CE_LavishSoupRecipe</defName>
+		<label>Cook Lavish Soup</label>
+		<description>Turns an uncooked lavish soup into 10 cooked lavish soups.</description>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoExtract>false</autoExtract>
+		<useIngredients>true</useIngredients>
+		<transfersIngredientList>true</transfersIngredientList>
+		<priorityInBillList>2</priorityInBillList>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedSoupLavish</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<ticks>120000</ticks>
+		<results>
+			<li>
+				<thing>VCE_CookedSoupLavish</thing>
+				<count>10</count>
+			</li>
+		</results>
+		<noPowerDestroysProgress>true</noPowerDestroysProgress>
+		<noPowerDestroysMessage>VCE_SoupFailurePower</noPowerDestroysMessage>
+		<noPowerDestroysInitialWarning>VCE_SoupFailurePowerWarning</noPowerDestroysInitialWarning>
+		<rareTicksToDestroy>10</rareTicksToDestroy>
+		<destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+	</PipeSystem.ProcessDef>
+	
+	<PipeSystem.ProcessDef>
+		<defName>CE_GourmetSoupRecipe</defName>
+		<label>Cook Gourmet Soup</label>
+		<description>Turns an uncooked gourmet soup into 10 cooked gourmet soups.</description>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoExtract>false</autoExtract>
+		<useIngredients>true</useIngredients>
+		<transfersIngredientList>true</transfersIngredientList>
+		<priorityInBillList>3</priorityInBillList>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedSoupGourmet</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<ticks>120000</ticks>
+		<results>
+			<li>
+				<thing>VCE_CookedSoupGourmet</thing>
+				<count>10</count>
+			</li>
+		</results>
+		<noPowerDestroysProgress>true</noPowerDestroysProgress>
+		<noPowerDestroysMessage>VCE_SoupFailurePower</noPowerDestroysMessage>
+		<noPowerDestroysInitialWarning>VCE_SoupFailurePowerWarning</noPowerDestroysInitialWarning>
+		<rareTicksToDestroy>10</rareTicksToDestroy>
+		<destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+	</PipeSystem.ProcessDef>
+
+</Defs>
