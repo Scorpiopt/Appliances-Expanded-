@@ -22,6 +22,9 @@
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
     </li>
   </modDependencies>
+   <loadBefore>
+	<li>bambaryla.VCEPU</li>
+  </loadBefore>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
