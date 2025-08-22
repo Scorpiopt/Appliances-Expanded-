@@ -32,7 +32,7 @@
 		<ingestible>
 		<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
 			<foodType>Processed</foodType>
-			<preferability>DesperateOnly</preferability>
+			<preferability>MealFine</preferability>
 			<tasteThought>CE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>CE_AteFriedGoods</specialThoughtAsIngredient>
 			<ingestEffect>EatMeat</ingestEffect>
@@ -75,7 +75,7 @@
 		<ingestible>
 		<optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
 			<foodType>Processed</foodType>
-			<preferability>DesperateOnly</preferability>
+			<preferability>MealFine</preferability>
 			<tasteThought>CE_AteFriedGoods</tasteThought>
 			<specialThoughtAsIngredient>CE_AteFriedGoods</specialThoughtAsIngredient>
 			<ingestEffect>EatVegetarian</ingestEffect>
