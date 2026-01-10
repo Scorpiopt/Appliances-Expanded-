@@ -203,6 +203,7 @@
 		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_Refuelable">
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<fuelConsumptionRate>10</fuelConsumptionRate>
 				<fuelCapacity>100.0</fuelCapacity>
 				<fuelFilter>
